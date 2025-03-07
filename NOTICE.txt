@@ -1,0 +1,107 @@
+NOTICE
+
+This software includes portions of the following third-party components:
+
+===============================================================================
+PyQt6 6.8.1
+Copyright (c) Riverbank Computing Limited
+Licensed under GNU General Public License v3 (GPLv3)
+https://www.gnu.org/licenses/gpl-3.0.html
+
+===============================================================================
+PyQt6-Qt6 6.8.2
+Copyright (c) The Qt Company
+Licensed under GNU Lesser General Public License v3 (LGPLv3)
+https://www.gnu.org/licenses/lgpl-3.0.html
+
+===============================================================================
+PyQt6_sip 13.10.0
+Copyright (c) Riverbank Computing Limited
+Licensed under BSD 2-Clause "Simplified" License
+https://opensource.org/license/bsd-2-clause
+
+===============================================================================
+et_xmlfile 2.0.0
+Copyright (c) 2014-2024 openpyxl
+Licensed under MIT License
+https://opensource.org/license/mit
+
+===============================================================================
+numpy 2.2.3
+Copyright (c) 2005-2024, NumPy Developers
+Licensed under BSD License
+https://github.com/numpy/numpy/blob/main/LICENSE.txt
+
+===============================================================================
+openpyxl 3.1.5
+Copyright (c) 2010-2024 openpyxl
+Licensed under MIT License
+https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/3.1/LICENCE.rst
+
+===============================================================================
+pandas 2.2.3
+Copyright (c) 2008-2024, AQR Capital Management, LLC, Lambda Foundry, Inc.
+and PyData Development Team
+Licensed under BSD 3-Clause License
+https://github.com/pandas-dev/pandas/blob/main/LICENSE
+
+===============================================================================
+pillow 11.1.0
+Copyright (c) 1997-2024 by Secret Labs AB
+Copyright (c) 1995-2024 by Fredrik Lundh
+Licensed under CMU License (MIT-CMU)
+https://github.com/python-pillow/Pillow/blob/master/LICENSE
+
+===============================================================================
+plyer 2.1.0
+Copyright (c) 2014-2024 plyer authors and contributors
+Licensed under MIT License
+https://github.com/kivy/plyer/blob/master/LICENSE
+
+===============================================================================
+python-dateutil 2.9.0.post0
+Copyright (c) 2003-2024 Gustavo Niemeyer
+Licensed under Apache Software License and BSD License
+https://github.com/dateutil/dateutil/blob/master/LICENSE
+
+===============================================================================
+pytz 2025.1
+Copyright (c) 2003-2024 Stuart Bishop
+Licensed under MIT License
+https://pythonhosted.org/pytz/
+
+===============================================================================
+six 1.17.0
+Copyright (c) 2010-2024 Benjamin Peterson
+Licensed under MIT License
+https://github.com/benjaminp/six/blob/master/LICENSE
+
+===============================================================================
+tzdata 2025.1
+Copyright (c) 2022-2024 Python Software Foundation
+Licensed under Apache Software License 2.0
+https://github.com/python/tzdata/blob/master/LICENSE
+
+===============================================================================
+
+Font Awesome** (Icons and Fonts)
+Copyright (c) 2024, Fonticons, Inc. (https://fontawesome.com)
+Source: https://github.com/FortAwesome/Font-Awesome
+License:
+Icons: CC BY 4.0 (Creative Commons Attribution 4.0 International)
+Fonts: SIL OFL 1.1 (Open Font License)
+Code (if used): MIT License
+License URLs:
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+SIL OFL 1.1: https://scripts.sil.org/OFL
+MIT: https://opensource.org/license/mit/
+Note:
+If using icons, attribution is required (e.g., "Icons by Font Awesome").
+Font files must remain under SIL OFL 1.1 and cannot be sold individually.
+
+===============================================================================
+
+Legal Disclaimer
+The licenses of above third-party libraries are independent of this project's GPLv3 terms.
+All copyright notices and license texts must be retained in distributions.
+For full legal compliance, refer to the original license documents.
