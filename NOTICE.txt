@@ -1,6 +1,6 @@
 NOTICE
 
-This software includes portions of the following third-party components:
+This software includes components from the following third-party projects:
 
 ===============================================================================
 PyQt6 6.8.1
@@ -61,7 +61,7 @@ https://github.com/kivy/plyer/blob/master/LICENSE
 ===============================================================================
 python-dateutil 2.9.0.post0
 Copyright (c) 2003-2024 Gustavo Niemeyer
-Licensed under Apache Software License and BSD License
+Licensed under Apache Software License 2.0 and BSD License
 https://github.com/dateutil/dateutil/blob/master/LICENSE
 
 ===============================================================================
@@ -83,25 +83,34 @@ Licensed under Apache Software License 2.0
 https://github.com/python/tzdata/blob/master/LICENSE
 
 ===============================================================================
-
-Font Awesome** (Icons and Fonts)
-Copyright (c) 2024, Fonticons, Inc. (https://fontawesome.com)
-Source: https://github.com/FortAwesome/Font-Awesome
-License:
-Icons: CC BY 4.0 (Creative Commons Attribution 4.0 International)
-Fonts: SIL OFL 1.1 (Open Font License)
-Code (if used): MIT License
-License URLs:
-CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-SIL OFL 1.1: https://scripts.sil.org/OFL
-MIT: https://opensource.org/license/mit/
-Note:
-If using icons, attribution is required (e.g., "Icons by Font Awesome").
-Font files must remain under SIL OFL 1.1 and cannot be sold individually.
+Font Awesome (Icons and Fonts)
+Copyright (c) 2024 Fonticons, Inc. (https://fontawesome.com)
+Icons: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+Fonts: SIL OFL 1.1 (https://scripts.sil.org/OFL)
+Code: MIT License (https://opensource.org/license/mit/)
+Note: Attribution required for icons (e.g., "Icons by Font Awesome")
 
 ===============================================================================
+Additional Dependencies:
+altgraph 0.17.4              | MIT License
+certifi 2025.1.31            | MPL 2.0
+charset-normalizer 3.4.1     | MIT License
+idna 3.10                    | BSD License
+ordered-set 4.1.0            | MIT License
+packaging 24.2               | Apache/BSD
+pefile 2023.2.7              | MIT License
+pyinstaller 6.12.0           | GPLv2
+pyinstaller-hooks-contrib    | Apache/GPLv2
+pywin32-ctypes 0.2.3         | BSD-3-Clause
+requests 2.32.3              | Apache 2.0
+urllib3 2.3.0                | MIT License
+zstandard 0.23.0             | BSD License
 
-Legal Disclaimer
-The licenses of above third-party libraries are independent of this project's GPLv3 terms.
-All copyright notices and license texts must be retained in distributions.
-For full legal compliance, refer to the original license documents.
+===============================================================================
+LEGAL DISCLAIMER
+
+The third-party components listed above are subject to their own licenses.
+The GPLv3 license of this project does not alter the rights and obligations
+under these third-party licenses. All copyright notices and license texts
+must be preserved in any distribution of this software. For complete license
+information, please refer to the original documentation of each component.

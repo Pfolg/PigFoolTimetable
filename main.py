@@ -32,6 +32,7 @@ import time
 import webbrowser
 from datetime import datetime, timedelta
 
+import requests
 from PyQt6 import uic, QtCore, QtWidgets
 from PyQt6.QtCore import QDateTime
 from PyQt6.QtGui import QPixmap, QIcon, QAction, QBrush, QColor
@@ -107,6 +108,45 @@ def get_sort_key(item):
     else:
         # 过去时间组（组1），按时间降序排列
         return (1, -dt.timestamp())
+
+
+def checkTag():
+    # GitHub API的URL
+    url = f'https://api.github.com/repos/Pfolg/PigFoolTimetable/releases'
+
+    # 发送GET请求
+    response = requests.get(url, verify=False)  # 不进行身份验证，可能会有风险
+
+    # 检查请求是否成功
+    if response.status_code == 200:
+        # 解析JSON数据
+        r = response.json()
+        if r:
+            release = [0]
+            # 打印每个发布的信息
+            # print(f"Release Tag: {release['tag_name']}")
+            # print(f"Release Name: {release['name']}")
+            # print(f"Release Date: {release['published_at']}")
+            # print(f"Release Description: {release['body']}")
+            if ver == release['tag_name']:
+                infTxt = "当前是最新版！\n"
+
+            else:
+                infTxt = f"当前不是最新版！\t{ver}>>>{release['tag_name']}\n"
+
+            QMessageBox.information(None, "设置",
+                                    infTxt +
+                                    f"Release Tag: {release['tag_name']}\n"
+                                    f"Release Name: {release['name']}\n"
+                                    f"Release Date: {release['published_at']}\n"
+                                    f"Release Description: \n{release['body']}"
+                                    )
+        else:
+            QMessageBox.information(None, "设置", "现在可能还未发布Release！")
+
+    else:
+        # print("Failed to retrieve data")
+        QMessageBox.warning(None, "设置", "Failed to retrieve data.\n获取失败！")
 
 
 class MainUI(QWidget):
@@ -266,14 +306,16 @@ class SettingUI(QWidget):
     def clear_icon_path(self):
         self.lineEdit.clear()
 
-    def how_to_startUp(self):
+    @staticmethod
+    def how_to_startUp():
         r = QMessageBox.information(
             None, "帮助", "扣咩啦噻~\n懒得用代码实现，自己在网上搜教程",
             QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Help)
         if r == QMessageBox.StandardButton.Help:
             webbrowser.open("https://blog.csdn.net/qq_41554005/article/details/120947070")
 
-    def open_current_folder(self, path=None):
+    @staticmethod
+    def open_current_folder(path=None):
         if not path:
             path = os.getcwd()
         try:
@@ -281,7 +323,8 @@ class SettingUI(QWidget):
         except FileNotFoundError:
             pass
 
-    def open_website(self):
+    @staticmethod
+    def open_website():
         webbrowser.open(official_website)
 
 
@@ -309,7 +352,8 @@ class AddItemUI:
         self.currentTime = QDateTime.currentDateTime()  # 使用当前时间作为默认时间
         self.set()
 
-    def selectColor(self, label: QLabel, color_type):
+    @staticmethod
+    def selectColor(label: QLabel, color_type):
         # 弹出颜色对话框并获取颜色
         color = QColorDialog.getColor()
 
@@ -938,6 +982,8 @@ class TimeTableApp:
         self.setting_frame.pushButton_14.clicked.connect(self.add_classes)
         self.setting_frame.checkBox_4.checkStateChanged.connect(self.showOnDesktop)
         self.setting_frame.checkBox_5.setVisible(False)
+        # 检查更新
+        self.setting_frame.pushButton_6.clicked.connect(checkTag)
         # self.setting_frame.checkBox_5.checkStateChanged.connect(self.isTop)
         # 移动浮窗在屏幕上的位置
         self.setting_frame.horizontalSlider.setMaximum(self.screen_width)
@@ -1130,7 +1176,7 @@ def main():
 
 if __name__ == '__main__':
     send_message = True
-    official_website = "http://example.com"
+    official_website = "https://github.com/Pfolg/PigFoolTimetable"
     appName = "Pig Fool Timetable"
     ver = 1.0
     main()

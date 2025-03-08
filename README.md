@@ -60,6 +60,12 @@ or you can use code directly, and it's highly recommended to use virtual environ
 - ✅ Event repeat support.
 - ❌ Can't change event but in `json` file.
 
+### Preview
+
+![](assets/preview/1.png)
+![](assets/preview/2.png)
+![](assets/preview/3.png)
+
 # Please Note
 
 ⚠️ Please read **README** and **[LICENSE](LICENSE.txt)** carefully!

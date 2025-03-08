@@ -59,6 +59,12 @@ Windows 11 便携版
 - ✅ 事件重复支持。
 - ❌ 无法二次编辑事件，除了编辑`json` 文件。
 
+### 预览
+
+![](assets/preview/1.png)
+![](assets/preview/2.png)
+![](assets/preview/3.png)
+
 # 请注意
 
 ⚠️ 请仔细阅读[**自述文件**](..\README.md)和[**许可证**](..\LICENSE.txt)！
