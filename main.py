@@ -111,6 +111,8 @@ def get_sort_key(item):
 
 
 def checkTag():
+    QMessageBox.information(None, "设置", "尚不能使用此功能！")
+    return
     # GitHub API的URL
     url = f'https://api.github.com/repos/Pfolg/PigFoolTimetable/releases'
 
@@ -119,6 +121,7 @@ def checkTag():
 
     # 检查请求是否成功
     if response.status_code == 200:
+
         # 解析JSON数据
         r = response.json()
         if r:
