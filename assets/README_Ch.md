@@ -26,9 +26,9 @@
 
 ### 下载
 
-Windows 11 安装程序
+[Windows 11 安装程序](https://github.com/Pfolg/PigFoolTimetable/releases/download/v1.0/PigFoolTimetable_1.0_Setup.exe)
 
-Windows 11 便携版
+[Windows 11 便携版](https://github.com/Pfolg/PigFoolTimetable/releases/download/v1.0/PigFoolTimetable.zip)
 
 或者你可以直接使用源代码，并且我推荐使用虚拟环境运行。
 

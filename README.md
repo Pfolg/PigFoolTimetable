@@ -27,9 +27,9 @@ UI by [PyQt6](https://www.riverbankcomputing.com/static/Docs/PyQt6/introduction.
 
 ### Download
 
-Windows 11 installer
+[Windows 11 installer](https://github.com/Pfolg/PigFoolTimetable/releases/download/v1.0/PigFoolTimetable_1.0_Setup.exe)
 
-Windows 11 portable
+[Windows 11 portable](https://github.com/Pfolg/PigFoolTimetable/releases/download/v1.0/PigFoolTimetable.zip)
 
 or you can use code directly, and it's highly recommended to use virtual environment to run code.
 
